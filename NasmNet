@@ -1,0 +1,8 @@
+extern System
+section Data:
+    msg ds "Hello,\0world!"
+section Code:
+    Main:
+        mov r1, msg
+        call Console.WriteLine[string]
+        ret
